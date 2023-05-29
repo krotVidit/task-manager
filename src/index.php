@@ -1,4 +1,5 @@
 <?php
+$title  = "Главная страница";
 require_once ("./block/header.php");
 ?>
 
