@@ -6,10 +6,12 @@
 
 <script>
     $(function() {
-        $("#datepickerStart").datepicker();
-    });
-    $(function() {
-        $("#datepickerEnd").datepicker();
+        $("#datepickerStart").datepicker({
+            dateFormat: 'yy-mm-dd'
+        });
+        $("#datepickerEnd").datepicker({
+            dateFormat: 'yy-mm-dd'
+        });
     });
 </script>
 
