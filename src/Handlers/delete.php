@@ -12,8 +12,7 @@ if (isset($_GET['id'])) {
         
         $deleteSql = "DELETE FROM $tabl WHERE id = $taskId";
         if ($mysql->query($deleteSql)) {
-           
-            echo "Задача успешно удалена.";
+           require ("../Page/SuccessfulDelete.php");
         } else {
            
             echo "Ошибка при удалении задачи: " . $mysql->error;

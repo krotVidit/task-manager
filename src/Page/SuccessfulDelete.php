@@ -1,10 +1,10 @@
 <?php
-$title = "Задача Сохранена";
-require_once("../block/header.php");
+$title = "Задача удалена";
+require_once("../block/header.php")
 ?>
 
 <div class="text-center mt-5">
-    <h1>Задача успешно сохранена </h1>
+    <h1>Задача успешно удалена </h1>
     <div class="row mt-5">
         <a class="btn btn-primary  col " href="../Page/CreatTask.php">Создать новую задачу</a>
         <a class="btn btn-primary  col" href="../index.php">Просмотреть созданные задачи </a>
@@ -14,6 +14,7 @@ require_once("../block/header.php");
 
 
 
+
 <?php
-require_once("../block/footer.php");
+require_once("../block/footer.php")
 ?>
