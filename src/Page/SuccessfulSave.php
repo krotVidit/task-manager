@@ -1,5 +1,5 @@
 <?php
-$title = "Задача Сохранена";
+$titlePage = "Задача Сохранена";
 require_once("../block/header.php");
 ?>
 
