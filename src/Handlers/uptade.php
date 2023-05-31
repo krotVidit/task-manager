@@ -3,11 +3,7 @@ require_once("../connect.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['id'])) {
-        $taskId = $_POST['id'];
-        $title = $_POST['title'];
-        $description = $_POST['description'];
-        $dateStart = $_POST['dateStart'];
-        $dateEnd = $_POST['dateEnd'];
+        require ("../Handlers/_POST.php");
 
         
         $updateSql = "UPDATE $tabl SET title = '$title', description = '$description', dateStart = '$dateStart', dateEnd = '$dateEnd' WHERE id = $taskId";

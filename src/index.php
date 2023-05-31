@@ -21,9 +21,10 @@ if ($result->num_rows > 0) {
       require("../src/Page/TaskInference.php");
     }
 } else {
-    
-   
+
     require ("../src/Page/NoTasskCreated.php");
+
+
    
 }
 
