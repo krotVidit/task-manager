@@ -1,6 +1,7 @@
 <?php
-$title  = "Главная страница";
+$titlePage  = "Главная страница";
 require_once ("./block/header.php");
+
 ?>
 
 <?php
@@ -17,10 +18,13 @@ if ($result->num_rows > 0) {
         $dateStart = $row['dateStart'];
         $dateEnd = $row['dateEnd'];
 
-      require("../src/TaskInference.php");
+      require("../src/Page/TaskInference.php");
     }
 } else {
-    echo '<p>Нет созданных задач.</p>';
+    
+   
+    require ("../src/Page/NoTasskCreated.php");
+   
 }
 
 $mysql->close();
